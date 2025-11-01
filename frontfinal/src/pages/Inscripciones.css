@@ -1,0 +1,17 @@
+.inscripciones-container {
+  margin: 2rem;
+}
+
+.tabla-inscripciones {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-inscripciones th, .tabla-inscripciones td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.tabla-inscripciones th {
+  background-color: #f2f2f2;
+}

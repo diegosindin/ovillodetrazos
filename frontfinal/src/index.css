@@ -1,0 +1,164 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #213547;
+}
+
+/* 🔹 Reseteo base del body */
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 0; /* ❌ antes tenía 40px que desplazaba todo */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+/* 🔹 Enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* 🔹 Títulos */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* 🔹 Inputs generales */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* 🔹 Botones */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2c3e50;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #1a252f;
+  transform: scale(1.03);
+}
+
+/* 🔹 Mensajes */
+.mensaje-exito {
+  background: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mensaje-error {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* 🔹 Formularios de usuarios y profesores */
+.formulario-usuario,
+.formulario-profesor {
+  max-width: 600px;
+  margin: 40px auto; /* centrado automático */
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* 🔹 Tarjetas de profesores */
+.tarjetas-profesores {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 0 1rem;
+}
+
+.tarjeta-profesor {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tarjeta-profesor h3 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.biografia-profesor {
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.4;
+  min-height: 60px;
+}
+
+.redes-sociales a {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.acciones-profesor {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.acciones-profesor button {
+  padding: 6px 12px;
+  font-size: 14px;
+}
+
+.acciones-profesor button:first-of-type {
+  background: #ffc107;
+  color: #333;
+}
+
+.acciones-profesor button:last-of-type {
+  background: #dc3545;
+  color: white;
+}
+
+.acciones-profesor button:first-of-type:hover {
+  background: #e0a800;
+}
+
+.acciones-profesor button:last-of-type:hover {
+  background: #c82333;
+}

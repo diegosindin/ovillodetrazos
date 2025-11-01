@@ -1,0 +1,154 @@
+/* === CORRECCIÓN GLOBAL DE CENTRADO === */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #f5f7fa;
+}
+
+/* === PÁGINA DEL FORMULARIO (registro o login) === */
+.registro-usuario-page,
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 70px); /* resta el alto del navbar fijo */
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* === TARJETA DEL FORMULARIO === */
+.formulario-usuario,
+.formulario-login {
+  background: white;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* === TÍTULO === */
+.formulario-usuario h2,
+.formulario-login h2 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 1.9rem;
+}
+
+.descripcion {
+  color: #555;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+/* === INPUTS === */
+.formulario-usuario input,
+.formulario-login input {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.formulario-usuario input:focus,
+.formulario-login input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.4);
+  outline: none;
+}
+
+/* === BOTONES === */
+.formulario-usuario button,
+.formulario-login button {
+  background-color: #1e90ff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.formulario-usuario button:hover,
+.formulario-login button:hover {
+  background-color: #0066cc;
+  transform: scale(1.03);
+}
+
+/* === MENSAJES === */
+.mensaje-exito {
+  color: #2e7d32;
+  background: #c8e6c9;
+  padding: 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.mensaje-error {
+  color: #c62828;
+  background: #ffcdd2;
+  padding: 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+/* === ENLACE SECUNDARIO === */
+.ya-registrado {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.ya-registrado a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.ya-registrado a:hover {
+  text-decoration: underline;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 480px) {
+  .formulario-usuario,
+  .formulario-login {
+    padding: 2rem 1.5rem;
+    max-width: 90%;
+  }
+
+  .formulario-usuario h2,
+  .formulario-login h2 {
+    font-size: 1.6rem;
+  }
+}
+/* esto es un agregado que me tira el codigo */
+/* esto es un agregado que me tira el codigo */
+@media (max-height: 600px) {
+  .registro-usuario-page,
+  .login-page {
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}   

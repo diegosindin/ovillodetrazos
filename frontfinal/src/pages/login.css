@@ -1,0 +1,137 @@
+/* === LOGIN PAGE === */
+
+/*  Contenedor general */
+.login-container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f3f4f6, #e8ecf0);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/*  Tarjeta del formulario */
+.login-form {
+  background-color: #fff;
+  padding: 2.5rem 3rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.login-form:hover {
+  transform: translateY(-3px);
+}
+
+/*  Título */
+.login-container h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #2c3e50;
+  font-weight: 700;
+  text-align: center;
+}
+
+/*  Descripción opcional */
+.login-container p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+/*  Campos de entrada */
+.login-form input {
+  padding: 0.9rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-form input:focus {
+  border-color: #1e90ff;
+  box-shadow: 0 0 5px rgba(30, 144, 255, 0.3);
+  outline: none;
+}
+
+/*  Botón de ingreso */
+.login-form button {
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #0066cc;
+  transform: scale(1.03);
+}
+
+/*  Mensajes de error o éxito */
+.mensaje {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+}
+
+.mensaje:empty {
+  display: none;
+}
+
+/* Mensaje de error */
+.mensaje.error {
+  color: #a94442;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+/* Mensaje de éxito */
+.mensaje.exito {
+  color: #155724;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+
+/*  Link de registro */
+.login-container .registro-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.login-container .registro-link a {
+  color: #1e90ff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-container .registro-link a:hover {
+  text-decoration: underline;
+}
+
+/*  Responsive */
+@media (max-width: 480px) {
+  .login-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .login-container h2 {
+    font-size: 1.7rem;
+  }
+}

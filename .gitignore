@@ -1,0 +1,31 @@
+# Node / JS
+node_modules/
+backfinal/node_modules/
+frontfinal/node_modules/
+
+# Build / dist
+dist/
+build/
+backfinal/dist/
+frontfinal/dist/
+
+# Environment
+.env
+.env.local
+.env.*.local
+backfinal/.env
+frontfinal/.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
