@@ -9,7 +9,7 @@ El proyecto esta dividido en backfinal y frontfinal, con Node, la base de datos 
 Mongo DB y esta cargado en Git Hub, por lo que se requiere tener git instalado.
 En cuanto al front instalar las dependencias y ponerlo a correr.
 Entidades principales : usuario, profesor  y curso.
-En la pagina de inicio tenemos la opcion de registrarse o loguearse, luego tenemos en la barra del navbar la opcion de registrarse o ingresar directamente, con esta ultima tenemos la posibilidad de inscibirnos a los cursos. En otra parte, tenemos la opcion de crear cursos, seleccionando el profesor de la lista que esta cargada, y luego podemos ver los cursos, con su carga horaria, su cupos totales y disponibles para poder inscribirse. Los cursos tienen una lista de tag para poder distinguerse, que es la misma que aplica para filtrar los cursos que buscamos para poder inscribirnos.
+En la pagina de inicio tenemos la opcion de registrarse o loguearse, luego tenemos en la barra del navbar la opcion de registrarse o ingresar directamente, con esta ultima tenemos la posibilidad de inscibirnos a los cursos. En otra parte, tenemos la opcion de crear cursos, seleccionando el profesor de la lista que esta cargada, y luego podemos ver los cursos, con su carga horaria, su cupos totales y disponibles para poder inscribirse. Los cursos tienen una lista de tag para poder distinguirse, que es la misma que aplica para filtrar los cursos que buscamos para poder inscribirnos.
 Las principales rutas de las api son : 
 /api/usuarios
 
